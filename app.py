@@ -1,9 +1,14 @@
 from collections import defaultdict
 
-import matplotlib.pyplot as plt
-
 
 def plot_velocity(velocity_log, chosen_id=None, output_path="../outputs/day3_raw_velocity.png"):
+    try:
+        import matplotlib.pyplot as plt
+    except ModuleNotFoundError as exc:
+        raise ModuleNotFoundError(
+            "matplotlib is required for plot_velocity(). Install it with: pip install matplotlib"
+        ) from exc
+
     if not velocity_log:
         print("No velocity data available yet; skipping plot generation.")
         return
