@@ -25,16 +25,6 @@ def plot_velocity(velocity_log, chosen_id=None, output_path="../outputs/day3_raw
     print(f"Saved velocity plot to {output_path}")
 
 
-if __name__ == "__main__":
-    velocity_log = defaultdict(list)
-    chosen_id = 0
-
-    # Example usage:
-    # velocity_log.setdefault(tid, []).append(velocities[tid])
-    # chosen_id = max(velocity_log, key=lambda tid: len(velocity_log[tid]))
-
-    plot_velocity(velocity_log, chosen_id=chosen_id)
-
 import streamlit as st
 import tempfile, os
 from evaluate import run_pipeline, generate_overlay_video
