@@ -1,0 +1,15 @@
+﻿# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Models and videos - too big for GitHub
+*.pt
+*.mp4
+*.png
+*.jpg
+output_*.jpg
+yolov8n.pt
+
+# OneDrive temp
+*.tmp
