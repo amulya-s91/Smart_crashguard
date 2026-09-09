@@ -53,7 +53,7 @@ if uploaded_file is not None:
                 "time": detected_at.strftime("%I:%M:%S %p"),
                 "timezone": detected_at.tzname() or "local time",
             })
-            st.success(f"Event detected at {event_time:.2f} seconds.")
+            st.success(f"accident detected .")
             st.subheader("Accident details")
             detail_row = st.columns(3)
             detail_row[0].metric("Date", details["date"])
